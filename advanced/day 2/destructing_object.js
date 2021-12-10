@@ -21,5 +21,5 @@ var user = {
 
 
 const {name:{firstName},} = user;
-console.log(name);
+console.log(firstName);
 

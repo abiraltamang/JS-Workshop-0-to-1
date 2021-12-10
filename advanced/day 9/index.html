@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exception Handling</title>
+</head>
+<body>
+    <input type="text" id="inputField">
+    <button onclick="handleSubmit()" >Submit</button>
+
+
+
+    <script>
+        function handleSubmit(){
+            var data = document.getElementById("inputField").value;
+
+            try{
+                if (isNaN(data)){
+                    throw "Not a number";
+                }
+            }
+            catch(err){
+                console.log(err);
+            }
+        }
+
+
+        // console.log("Hello");
+
+        // try{
+        //  console.log(hello());
+        // }catch(err){
+        //     // console.log(err.name);
+        //     // console.log(err.message);
+        //     // console.log(err);
+        //     console.log(err.stack);
+        // }finally{
+        //     console.log("Resolved");
+
+        // }
+
+        // console.log("Hello2");
+        // console.log("Hello3");
+
+
+
+    </script>
+</body>
+</html>
